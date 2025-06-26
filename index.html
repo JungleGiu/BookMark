@@ -8,7 +8,7 @@
     <meta name="keywords" content="bookmark, clone, simple, web app" />
     <link rel="stylesheet" href="styles.css" />
     <title>
-      "Bookmarks - a simple bookmark manager for browsers | Bookmarks - a simple
+      Bookmarks - a simple bookmark manager for browsers | Bookmarks - a simple
       bookmark manager for browsers
     </title>
   </head>
@@ -18,16 +18,31 @@
         <div class="logo">
           <img src="./Assets/Images/logo-bookmark.svg" alt="Bookmarks Logo" />
         </div>
-        <nav class="burger-icon">
-          <img src="./Assets/Images/icon-hamburger.svg" alt="Menu" />
-          <ul class="navbar-links" hidden>
-            <li><a href="index.html" alt="Home">Features</a></li>
-            <li><a href="bookmarks.html" alt="Pricing">Pricing</a></li>
-            <li><a href="contact.html" alt="Contact">Contact</a></li>
-            <li><a href="about.html" alt="Login">Login</a></li>
-          </ul>
+        <nav class="burger">
+         <a onclick=openCloseBurger()> <img src="./Assets/Images/icon-hamburger.svg" alt="Menu" /> </a>
+         <div class="burger-menu">
+          <div class="upper-bar">
+            <img id="logo-menu" src="./Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
+            <a id="close-menu" onclick=openCloseBurger()><img src="./Assets/Images/icon-close.svg" alt="Close Menu"/></a>
+         </div>
+         <div class="burger-list">
+            <div class="menu-line"></div>
+            <a  alt="Home">Features</a>
+            <div class="menu-line"></div>
+            <a  alt="Pricing">Pricing</a>
+            <div class="menu-line"></div>
+            <a  alt="Contact">Contact</a>
+            <div class="menu-line"></div>
+            <a  alt="Login">Login</a></li>
+            <div class="menu-line"></div>
+         </div>
+         <div class="down-bar">
+           <img src="./Assets/Images/icon-facebook.svg" alt="Facebook" />
+<img src="./Assets/Images/icon-twitter.svg" alt="Twitter" />
+         </div>
         </nav>
-      </div>
+          </div>
+        </div>
     </header>
     <section class="hero">
       <div class="hero-image">
@@ -40,15 +55,19 @@
           A clean and simple interface to organize your favorite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <div class ="hero-buttons">
-          <button href="bookmarks.html" class="cta-button blue">
+        <div class="hero-buttons">
+          <button href="bookmarks.html" class="button blue">
             Get it on Chrome
           </button>
-          <button href="bookmarks.html" class="cta-button grey">
+          <button href="bookmarks.html" class="button grey">
             Get it on Firefox
           </button>
         </div>
       </div>
     </section>
+    <section class="features">
+  
+    </section>
   </body>
+  <script src="index.js"></script>
 </html>
