@@ -30,6 +30,8 @@ header {
 }
 .burger-menu {
   display: none;
+  animation :corner-in 0.6s ease-in-out;
+  animation-direction: reverse  ;
 }
 
 .burger-menu.open {
@@ -42,7 +44,7 @@ header {
   height: 100vh;
   background-color: rgba(37, 43, 70, 0.9);
   z-index: 1001;
-
+  animation: corner-in 0.6s ease-in-out;
   .upper-bar {
     position: relative;
     display: flex;
@@ -84,6 +86,16 @@ header {
 }
 
 @keyframes corner-in {
+  from {
+   
+    transform-origin: top right;
+    opacity: 0;
+    transform: scaleX(0) scaleY(0);
+  }
+  to {
+  transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .burger {
@@ -229,8 +241,9 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
+  align-content: flex-start;
   width: 100%;
-  height: 65vh  ;
+  height: 75vh  ;
   align-items: center;
   gap: 2rem;
   padding: 1rem;
@@ -239,15 +252,42 @@ header {
   align-items: center;
   align-self: center;
   text-align: center;
-
   gap: 1rem;
-
+  transition: 0.8s ease in;
+  animation: swipeIn 0.8s ease-in;
   img {
     width: 100%;
     height: auto;
     max-width: 300px;
     margin: 0 auto;
   }
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    margin-block-start: 10px;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+@keyframes swipeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}
+.features-item.closed {
+  display: none;
 }
 .features-list {
   display: flex;
@@ -255,26 +295,47 @@ header {
   align-items: center;
   width: 100%;
   margin-top: 30px;
-  gap: 1.2rem;
+  
   margin-bottom: 1.2rem;
-  input {
-    appearance: none;
-   
+  a {
     font-family: "Rubik", sans-serif;
     text-transform: capitalize;
     text-decoration: none;
     color: rgb(145, 148, 161);
-    font-size: 1.2rem;
-  
-  }
-  input:checked{
-    text-decoration: underline rgb(255, 148, 33);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 1.2rem 0;
   }
 }
 .button.blue.features {
   width: 100%;
   border-radius: 0.2rem;
-  margin-top: 1rem;
+  
   font-size: 1rem;
   padding: 0;
+}
+.menu-line-under {
+  display: none;
+}
+.menu-line-under.selected {
+  display: block;
+  position: relative;
+  animation: expand-line 0.5s ease-in-out;
+  transform-origin: center;
+
+  
+  width: 50%;
+  height: 3px;
+  background-color: rgb(250, 87, 87);
+  margin : 0;
+}
+@keyframes expand-line {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }
