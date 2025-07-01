@@ -1,7 +1,7 @@
 "use strict";
 
 const openCloseMenu = () => {
-  const menu = document.querySelector(".burger-menu");
+  const menu = document.querySelector(".burger__menu");
   menu.classList.toggle("open");
 };
 

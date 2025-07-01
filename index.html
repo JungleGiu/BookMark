@@ -6,7 +6,8 @@
     <meta name="author" content="Giu" />
     <meta name="description" content="A simple bookmark clone" />
     <meta name="keywords" content="bookmark, clone, simple, web app" />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
     <title>
       Bookmarks - a simple bookmark manager for browsers | Bookmarks - a simple
       bookmark manager for browsers
@@ -19,44 +20,44 @@
           <img src="./Assets/Images/logo-bookmark.svg" alt="Bookmarks Logo" />
         </div>
         <nav class="burger">
-         <a id="open-menu" onclick=openCloseMenu()> <img src="./Assets/Images/icon-hamburger.svg" alt="Menu" /> </a>
-         <div class="burger-menu">
-          <div class="upper-bar">
-            <img id="logo-menu" src="./Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
-            <a id="close-menu" onclick=openCloseMenu()><img src="./Assets/Images/icon-close.svg" alt="Close Menu"/></a>
-         </div>
-         <div class="burger-list">
-            <div class="menu-line"></div>
+         <a id="burger__open-icon" onclick=openCloseMenu()> <img src="./Assets/Images/icon-hamburger.svg" alt="Menu" /> </a>
+         <div class="burger__menu">
+          <div class="burger__menu__header">
+            <img id="burger__menu__header__logo" src="./Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
+            <a id="burger__menu__header__close" onclick=openCloseMenu()><img src="./Assets/Images/icon-close.svg" alt="Close Menu"/></a>
+          </div>
+         <div class="menu__list">
+            <div class="menu__list__line"></div>
             <a  alt="Home">Features</a>
-            <div class="menu-line"></div>
+            <div class="menu__list__line"></div>
             <a  alt="Pricing">Pricing</a>
-            <div class="menu-line"></div>
+            <div class="menu__list__line"></div>
             <a  alt="Contact">Contact</a>
-            <div class="menu-line"></div>
+            <div class="menu__list__line"></div>
             <a id="login" alt="Login">Login</a>
-            <div class="menu-line"></div>
+            <div class="menu__list__line"></div>
          </div>
-         <div class="down-bar">
-           <img src="./Assets/Images/icon-facebook.svg" alt="Facebook" />
-<img src="./Assets/Images/icon-twitter.svg" alt="Twitter" />
+         <div class="burger__menu__footer">
+          <img src="./Assets/Images/icon-facebook.svg" alt="Facebook" />
+          <img src="./Assets/Images/icon-twitter.svg" alt="Twitter" />
          </div>
         </nav>
           </div>
         </div>
     </header>
-    <div class="overlay">
+    <main>
     <section class="hero">
-      <div class="hero-image">
+      <div class="hero__image">
         <img src="./Assets/Images/illustration-hero.svg" alt="Hero Image" />
-        <div class="hero-image-overlay"></div>
+        <div class="hero__image-overlay"></div>
       </div>
-      <div class="hero-content">
+      <div class="hero__content">
         <h2>A simple bookmark manager</h2>
         <p>
           A clean and simple interface to organize your favorite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <div class="hero-buttons">
+        <div class="hero__content__buttons">
           <button href="bookmarks.html" class="button blue">
             Get it on Chrome
           </button>
@@ -69,29 +70,28 @@
     <section class="features">
   <h2>Features</h2>
   <p>Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-  <nav class="features-list">
-    <div class="menu-line"></div>
+  <nav class="features__list">
+    <div class="features__list__line"></div>
     <a onclick="selectFeature1()" >Simple Bookmarking</a>
-    <div class="menu-line-under selected" id="sel-1" ></div>
-      <div class="menu-line"></div>
+    <div class="features__list__line-under" id="sel-1" ></div>
+      <div class="features__list__line"></div>
       <a onclick="selectFeature2()" >Speedy Searching</a>
-      <div class="menu-line-under" id="sel-2"></div>
-      <div class="menu-line"></div>
+      <div class="features__list__line-under" id="sel-2"></div>
+      <div class="features__list__line"></div>
       <a  onclick="selectFeature3()" >Easy Sharing</a>
-      <div class="menu-line-under" id="sel-3"></div>
-      <div class="menu-line" ></div>
+      <div class="features__list__line-under" id="sel-3"></div>
+      <div class="features__list__line" ></div>
     </nav>
-    <div class="features-container">
-      
-    <div id="tab-1" class="features-item">
+    <div class="features__container">
+    <div id="tab-1" class="feature__item">
       <img src="./Assets/Images/illustration-features-tab-1.svg" alt="Brand Recognition">
-      <div class="features-content">
+      <div class="feature__item__content">
       <h3>Bookmark in one click</h3>
       <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
       <button class="button blue features">More Info</button>
       </div>
     </div>
-    <div id="tab-2" class="features-item closed">
+    <div id="tab-2" class="features__item closed">
       <img src="./Assets/Images/illustration-features-tab-2.svg" alt="Detailed Records">
       <div class="features-content">
       <h3>Intelligent search</h3>
@@ -99,9 +99,9 @@
       <button class="button blue features">More Info</button>
       </div>
     </div>
-    <div id="tab-3" class="features-item closed">
+    <div id="tab-3" class="features__item closed">
       <img src="./Assets/Images/illustration-features-tab-3.svg" alt="Fully Customizable">
-      <div class="features-content">
+      <div class="feature__item__content">
       <h3>Share your bookmarks</h3>
       <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
       <button class="button blue features">More Info</button>
@@ -109,8 +109,24 @@
     </div>
   </div>
     </section>
-  
-    </div>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__logo">
+          <img src="./Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
+        </div>
+        <nav class="footer__nav">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="footer__socials">
+          <img src="./Assets/Images/icon-facebook.svg" alt="Facebook" />
+          <img src="./Assets/Images/icon-twitter.svg" alt="Twitter" />
+        </div>
+      </div>
+      <p>&copy; 2023 Bookmarks. All rights reserved.</p>
+    </footer>
   </body>
   <script src="index.js"></script>
 </html>

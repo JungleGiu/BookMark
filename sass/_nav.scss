@@ -1,0 +1,75 @@
+
+@use '_variables.scss' as var;
+
+.navbar-container{
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   
+    & .logo{
+        width: 50%;
+        height: 50%;
+        align-self: center;
+        & img{
+            transform: scale(0.8);
+        }
+    }
+    #burger__open-icon{
+       align-self: baseline;
+    }
+    & .burger__menu{
+        display: none;
+        cursor: pointer;
+        & .burger__line{
+            width: 2rem;
+            height: 0.25rem;
+            background-color: #333;
+            margin: 0.4rem 0;
+            transition: all 0.3s ease;
+        }
+        .menu__list{
+         display: none
+     }
+     .burger__menu__header{
+         display: none;
+     }
+    }
+    & .burger__menu.open{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: -0.2rem;
+        background-color: rgba(37, 43, 70, 0.9);
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+        & .burger__menu__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+           padding: 1.2rem;
+            }
+            & .menu__list{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+               height: 50%;
+                color: var.$primary-color
+            }
+            & .menu__list__line{
+                display: block;
+                height: 2px;
+                margin: 0.5rem 0;
+                background-color: var.$primary-color;
+                width: 80%;
+            }
+        }
+
+}
