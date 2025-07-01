@@ -1,0 +1,22 @@
+{
+  "name": "bookmark",
+  "version": "1.0.0",
+  "description": "In this repository I'll be developing **https://bookmarkextension.vercel.app/** page clone in stages. The objective of this exercise is to show my capacity to paginate and layout complex designs with different tecnologies:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JungleGiu/BookMark.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JungleGiu/BookMark/issues"
+  },
+  "homepage": "https://github.com/JungleGiu/BookMark#readme",
+  "dependencies": {
+    "sass": "^1.89.2"
+  }
+}
