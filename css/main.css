@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .navbar-container .logo {
   width: 50%;
@@ -39,11 +39,12 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
+  overflow: hidden;
   top: 0;
-  right: -0.2rem;
+  right: 0;
   background-color: rgba(37, 43, 70, 0.9);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 10;
 }
 .navbar-container .burger__menu.open .burger__menu__header {
@@ -52,23 +53,136 @@
   align-items: center;
   width: 90%;
   padding: 1.2rem;
+  margin-bottom: 2rem;
 }
 .navbar-container .burger__menu.open .menu__list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
   width: 100%;
   height: 50%;
   color: rgb(255, 255, 255);
 }
 .navbar-container .burger__menu.open .menu__list__line {
   display: block;
-  height: 2px;
+  height: 1px;
   margin: 0.5rem 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(145, 148, 161);
   width: 80%;
 }
+.navbar-container .burger__menu.open .menu__list a {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+.navbar-container .burger__menu.open .menu__list a:active {
+  color: rgb(37, 43, 70);
+}
+.navbar-container .burger__menu.open #login {
+  border: rgb(255, 255, 255) 2px solid;
+  border-radius: 0.2rem;
+  width: 80%;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar-container .burger__menu.open #login:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(37, 43, 70);
+}
+.navbar-container .burger__menu.open .burger__menu__footer {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: flex-end;
+  width: 80%;
+  margin-top: 7rem;
+}
+.navbar-container .burger__menu.open .burger__menu__footer img {
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.3s ease;
+}
+.navbar-container .burger__menu.open .burger__menu__footer img:active {
+  transform: scale(1.1);
+}
 
+@media screen and (min-width: 1024px) {
+  #burger__open-icon {
+    display: none;
+  }
+  .navbar-container {
+    height: 20rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .navbar-container .logo {
+    width: 25%;
+    height: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-container .logo img {
+    transform: scale(0.3);
+  }
+  .navbar-container .burger {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navbar-container .burger .burger__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10rem;
+  }
+  .navbar-container .burger .burger__menu .burger__menu__header,
+  .navbar-container .burger .burger__menu .burger__menu__footer,
+  .navbar-container .burger .burger__menu .menu__list__line {
+    display: none;
+  }
+  .navbar-container .burger .burger__menu .menu__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10rem;
+    width: 70%;
+    height: 100%;
+    color: rgb(37, 43, 70);
+  }
+  .navbar-container .burger .burger__menu .menu__list a {
+    text-transform: uppercase;
+    color: rgb(37, 43, 70);
+    font-size: 3.8rem;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 0;
+  }
+  .navbar-container .burger .burger__menu .menu__list a:hover {
+    color: rgb(250, 87, 87);
+  }
+  .navbar-container .burger .burger__menu .menu__list #login {
+    background-color: rgb(250, 87, 87);
+    border: 5px solid rgb(250, 87, 87);
+    border-radius: 1rem;
+    padding: 2rem 8rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .navbar-container .burger .burger__menu .menu__list #login:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(250, 87, 87);
+  }
+}
 body {
   margin: 0;
   padding: 0;
