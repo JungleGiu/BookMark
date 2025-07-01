@@ -12,8 +12,10 @@ const feature3 = document.querySelector("#tab-3");
 const select1= document.querySelector("#sel-1");
 const select2= document.querySelector("#sel-2");
 const select3= document.querySelector("#sel-3");
+
 const selectFeature1 =() => {
   select1.classList.add("selected");
+
   select2.classList.remove("selected");
   select3.classList.remove("selected");
   feature1.classList.remove("closed");
