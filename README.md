@@ -1,4 +1,4 @@
-#Bookmark Clone
+# Bookmark Clone
 In this repository I'll be developing **https://bookmarkextension.vercel.app/** page clone in stages.
 
 1. Htlm & CSS Vanilla
