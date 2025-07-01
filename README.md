@@ -17,6 +17,4 @@ For this fase of the project I needed to stay simple and use basics tecnologies 
 
  I tried to use as much **semantic tags** as I could, **kebab-case** for class naming in CSS and `alt` attribute for accessibility
 
-To display the project you can click on this link :
-http://htmlpreview.github.io/?https://github.com/JungleGiu/BookMark/blob/vanilla/index.html
-or clone this repository, no further inastallations are required.
+To display the project you can clone this repository, no further inastallations are required.
