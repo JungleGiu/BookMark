@@ -234,7 +234,7 @@ header {
 @media (min-width: 1024px) {
   .overlay {
     display: grid;
-
+    margin-top: 20rem;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 1fr);
   }
