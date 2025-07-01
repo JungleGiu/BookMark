@@ -552,17 +552,7 @@ header {
       margin: 2rem;
     }
     }
-    .features-container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      width: 70%;
-      height: 100%;
-      gap: 2rem;
-      padding: 0 1rem;
-      background-color: transparent;
-    }
+   
     .features-item {
    grid-row: 3/4;
       display: flex;
@@ -570,10 +560,10 @@ header {
       justify-content: flex-start;
       align-content: center;
       width: 100%;
-      height: 100%;
+      height: 80%;
       gap: 2rem;
       img{
-       transform: scale(4)
+       transform: scale(7)
       }
       .features-content {
         display: flex;
@@ -598,7 +588,7 @@ header {
           line-height: 1.5;
           padding: 0 1rem;
           text-align: left;
-          width: 100%;
+          width: 80%;
         }
         .button.blue.features {
           width: 50%;
