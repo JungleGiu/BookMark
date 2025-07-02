@@ -15,7 +15,6 @@ const select3= document.querySelector("#sel-3");
 
 const selectFeature1 =() => {
   select1.classList.add("selected");
-
   select2.classList.remove("selected");
   select3.classList.remove("selected");
   feature1.classList.remove("closed");

@@ -1,10 +1,11 @@
 .navbar-container {
-  height: 2rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 .navbar-container .logo {
   width: 50%;
@@ -188,21 +189,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 0 5rem 0;
 }
 .hero .hero__image-overlay {
-  width: 80%;
+  width: 72%;
   height: 22%;
   border-radius: 0 0 0 5rem;
-  transform: translateY(90%) translateX(20%);
+  transform: translateY(90%) translateX(-36%);
   position: absolute;
   background-color: rgb(83, 104, 223);
   z-index: -1;
-  overflow: hidden;
 }
 .hero .hero__image {
-  box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   height: auto;
 }
 .hero img {
@@ -219,9 +219,9 @@
 }
 .hero .hero__content h2 {
   font-size: 1.9rem;
-  text-transform: capitalize;
-  letter-spacing: 0.05rem;
   font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
   margin: 0 0 2rem 0;
   color: rgb(37, 43, 70);
 }
@@ -309,8 +309,8 @@
     justify-content: center;
   }
   .hero .hero__image img {
-    position: relative;
     transform: scale(400%);
+    margin-left: 20rem;
   }
   .hero .hero__content__buttons {
     display: flex;
@@ -347,6 +347,124 @@
     transform: translateY(-18%) translateX(20%);
   }
 }
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 5rem 0;
+  gap: 0.5rem;
+}
+.features .features__image-overlay {
+  width: 82%;
+  height: 22%;
+  border-radius: 0 5rem 5rem 0;
+  transform: translateY(-50%) translateX(-20%);
+  position: absolute;
+  background-color: rgb(83, 104, 223);
+  z-index: -1;
+}
+.features h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.features p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgb(145, 148, 161);
+  line-height: 1.8rem;
+  font-weight: 400;
+  width: 80%;
+}
+.features .features__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: rgb(145, 148, 161);
+  gap: 1rem;
+  font-weight: 400;
+  width: 100%;
+}
+.features .features__list a.selected {
+  text-decoration-line: underline;
+  text-decoration-color: rgb(250, 87, 87);
+  text-underline-offset: 1.2rem;
+}
+.features .features__list__line {
+  display: block;
+  background: rgb(145, 148, 161);
+  height: 1px;
+  width: 70%;
+}
+.features .features__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  overflow: hidden;
+}
+.features .features__container img {
+  scale: 0.63;
+}
+.features .features__container .features__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+.features .features__container .features__item .feature__item__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.features .features__container .features__item h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.features .features__container .features__item p {
+  margin: auto;
+  font-size: 1.1rem;
+  color: rgb(145, 148, 161);
+  line-height: 1.8rem;
+  font-weight: 400;
+  width: 100%;
+}
+.features .features__container .features__item button {
+  border-radius: 0.3rem;
+  background-color: rgb(83, 104, 223);
+  padding: 0.8rem 2.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+  margin: 2rem auto;
+  border: none;
+  width: 80%;
+}
+.features .features__container .features__item.closed {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
