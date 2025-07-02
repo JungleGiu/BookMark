@@ -2,13 +2,13 @@
 @use '_variables.scss' as var;
 
 .navbar-container{
-    height: 2rem;
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     box-shadow: var.$shadow;
-   
+   width: 100%;
     & .logo{
         width: 50%;
         height: 50%;

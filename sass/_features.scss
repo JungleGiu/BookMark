@@ -1,0 +1,104 @@
+@use "variables" as var;
+@use "mixin";
+
+.features {
+  @include mixin.flex(column, center);
+  margin: 0 0 5rem 0;
+  gap: 0.5rem;
+  & .features__image-overlay {
+    width: 82%;
+    height: 22%;
+    border-radius: 0 5rem 5rem 0;
+    transform: translateY(-50%) translateX(-20%);
+    position: absolute;
+    background-color: var.$tertiary-color;
+    z-index: -1;
+  
+  }
+
+  & h2 {
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  & p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var.$fourth-color;
+    line-height: 1.8rem;
+    font-weight: 400;
+    width: 80%;
+  }
+  & .features__list{
+    @include mixin.flex(column, center);
+    font-size: 1.4rem;
+    color: var.$fourth-color;
+    gap: 1rem;
+    font-weight: 400;
+    width: 100%;
+    & a.selected{
+        text-decoration-line: underline; 
+        text-decoration-color: var.$fifth-color;
+        text-underline-offset :1.2rem;
+    }
+}
+& .features__list__line{
+    display: block;
+    background: var.$fourth-color;
+    height: 1px;
+    width: 70%;
+}
+
+  & .features__container {
+    @include mixin.flex(row , center);
+    width: 80%;
+
+    overflow:hidden;
+    & img {
+      scale: 0.63;
+    }
+    & .features__item{
+    @include mixin.flex(column , center);
+    width: 100%;
+    gap: 0.5rem;
+    & .feature__item__content{
+        @include mixin.flex(column , center);
+        width: 100%;
+        gap: 1rem;
+    }
+    & h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+    & p {
+      margin:auto;
+      font-size: 1.1rem;
+      color: var.$fourth-color;
+      line-height: 1.8rem;
+      font-weight: 400;
+      width: 100%;
+    }
+    & button{
+        @include mixin.buttons(var.$tertiary-color, 0.8rem 2.2rem);
+        font-size: 1rem;
+        color: var.$primary-color;
+        transition: all 0.3s ease-in-out;
+        margin: 2rem auto;
+        border: none;
+        width: 80%
+    }
+}
+    & .features__item.closed{  
+      display : none;
+    }
+  }
+  
+
+}

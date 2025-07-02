@@ -71,18 +71,19 @@
   <p>Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
   <nav class="features__list">
     <div class="features__list__line"></div>
-    <a onclick="selectFeature1()" >Simple Bookmarking</a>
-    <div class="features__list__line-under" id="sel-1" ></div>
+    <a id="sel-1" class="selected" onclick="selectFeature1()" >Simple Bookmarking</a>
+    
       <div class="features__list__line"></div>
-      <a onclick="selectFeature2()" >Speedy Searching</a>
-      <div class="features__list__line-under" id="sel-2"></div>
+      <a id="sel-2" onclick="selectFeature2()" >Speedy Searching</a>
+    
       <div class="features__list__line"></div>
-      <a  onclick="selectFeature3()" >Easy Sharing</a>
-      <div class="features__list__line-under" id="sel-3"></div>
+      <a id="sel-3" onclick="selectFeature3()" >Easy Sharing</a>
+    
       <div class="features__list__line" ></div>
     </nav>
     <div class="features__container">
-    <div id="tab-1" class="feature__item">
+      <div class="features__image-overlay"></div>
+    <div id="tab-1" class="features__item">
       <img src="./Assets/Images/illustration-features-tab-1.svg" alt="Brand Recognition">
       <div class="feature__item__content">
       <h3>Bookmark in one click</h3>

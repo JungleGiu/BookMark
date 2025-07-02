@@ -1,15 +1,20 @@
-
-@mixin buttons ($color, $padding) {
-border-radius: 0.3rem;
-background-color: $color;
-padding: $padding;
-cursor: pointer;
+@mixin buttons($color, $padding) {
+  border-radius: 0.3rem;
+  background-color: $color;
+  padding: $padding;
+  cursor: pointer;
 }
 
-@mixin flex-column ($direction , $justify) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: center;
+@mixin flex($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
 }
-    
+
+@mixin mobile-title {
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
+}
