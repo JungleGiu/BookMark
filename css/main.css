@@ -183,11 +183,108 @@
     color: rgb(250, 87, 87);
   }
 }
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero__image-overlay {
+  width: 80%;
+  height: 22%;
+  border-radius: 0 0 0 5rem;
+  transform: translateY(90%) translateX(20%);
+  position: absolute;
+  background-color: rgb(83, 104, 223);
+  z-index: -1;
+  overflow: hidden;
+}
+.hero .hero__image {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+.hero img {
+  transform: scale(0.6);
+}
+.hero .hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(37, 43, 70);
+  margin: 0 0 5rem 0;
+}
+.hero .hero__content h2 {
+  font-size: 1.9rem;
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  margin: 0 0 2rem 0;
+  color: rgb(37, 43, 70);
+}
+.hero .hero__content p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  margin: 0 0 4rem 0;
+  color: rgb(145, 148, 161);
+  width: 80%;
+}
+.hero .hero__content__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.hero .button {
+  border-radius: 0.3rem;
+  background-color: rgb(83, 104, 223);
+  padding: 0.8rem 2.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+.hero .button.blue {
+  color: rgb(255, 255, 255);
+}
+.hero .button.blue:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(83, 104, 223);
+}
+.hero .button.grey {
+  border-radius: 0.3rem;
+  background-color: rgb(255, 255, 255);
+  padding: 0.8rem 2.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(37, 43, 70);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 2px 2px rgba(145, 148, 161, 0.5);
+}
+.hero .button.grey:active {
+  background-color: rgb(37, 43, 70);
+  color: rgb(255, 255, 255);
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
   background-color: rgb(255, 255, 255);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

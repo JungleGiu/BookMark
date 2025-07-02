@@ -1,5 +1,6 @@
 @use '_variables.scss' as var;
 @use '_nav.scss';
+@use '_hero.scss';
 
 body {
   margin: 0;
@@ -7,6 +8,13 @@ body {
   font-family: var.$font;
   background-color: var.$primary-color;
 } 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
 
 
 // @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");

@@ -1,0 +1,15 @@
+
+@mixin buttons ($color, $padding) {
+border-radius: 0.3rem;
+background-color: $color;
+padding: $padding;
+cursor: pointer;
+}
+
+@mixin flex-column ($direction , $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+    
