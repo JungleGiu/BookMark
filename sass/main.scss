@@ -2,7 +2,7 @@
 @use '_nav.scss';
 @use '_hero.scss';
 @use '_features.scss';
-
+@use'_footer.scss';
 
 *{
   box-sizing: border-box;
@@ -13,12 +13,6 @@ body {
   font-family: var.$font;
   background-color: var.$primary-color;
 } 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-}
+
 
 

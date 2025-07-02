@@ -5,10 +5,10 @@
   @include mixin.flex(column, center);
   margin: 0 0 5rem 0;
   & .hero__image-overlay {
-    width: 72%;
+    width: 82%;
     height: 22%;
     border-radius: 0 0 0 5rem;
-    transform: translateY(90%) translateX(-36%);
+    transform: translateY(90%) translateX(-30%);
     position: absolute;
     background-color: var.$tertiary-color;
     z-index: -1;
