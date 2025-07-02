@@ -1,0 +1,80 @@
+@use "../sass/_mixin.scss";
+@use "../sass/_variables.scss" as var;
+
+.hero {
+  @include mixin.flex-column(column, center);
+  & .hero__image-overlay {
+    width: 80%;
+    height: 22%;
+    border-radius: 0 0 0 5rem;
+    transform: translateY(90%) translateX(20%);
+    position: absolute;
+    background-color: var.$tertiary-color;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  & .hero__image {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  & img {
+    transform: scale(0.6);
+  }
+  .hero__content {
+    @include mixin.flex-column(column, center);
+    text-align: center;
+    color: var.$secondary-color;
+    margin: 0 0 5rem 0;
+
+    & h2 {
+      font-size: 1.9rem;
+      text-transform: capitalize;
+      letter-spacing: 0.05rem;
+      font-weight: 500;
+      margin: 0 0 2rem 0;
+      color: var.$secondary-color;
+    }
+    & p {
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+      font-weight: 400;
+      margin: 0 0 4rem 0;
+      color: var.$fourth-color;
+      width: 80%;
+    }
+  }
+  .hero__content__buttons {
+    @include mixin.flex-column(row, center);
+    gap: 1rem;
+    width: 100%;
+  }
+  & .button {
+    @include mixin.buttons(var.$tertiary-color, 0.8rem 2.2rem);
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    border: none;
+  }
+  .button.blue {
+    color: var.$primary-color;
+  }
+  .button.blue:active {
+    background-color: var.$primary-color;
+    color: var.$tertiary-color;
+  }
+  .button.grey {
+    @include mixin.buttons(var.$primary-color, 0.8rem 2.2rem);
+    font-size: 1rem;
+    color: var.$secondary-color;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 2px 2px rgba(145, 148, 161, 0.5);
+  }
+  .button.grey:active {
+    background-color: var.$secondary-color;
+    color: var.$primary-color;
+  }
+}
+
+// responsive
