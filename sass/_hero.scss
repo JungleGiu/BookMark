@@ -78,3 +78,69 @@
 }
 
 // responsive
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 80vh;
+    align-self: center;
+    width: 80%;
+    @include mixin.flex-column(row-reverse, space-around);
+    & .hero__content {
+      width:50%;
+      height: 80%;
+      @include mixin.flex-column(column, center);
+      align-items: flex-start;
+      gap: 3rem;
+       & h2{
+        font-size: 15rem;
+        text-align: left;
+     
+       }
+       & p{
+        font-size: 5rem;
+        text-align: left;
+        line-height: 1.5;
+        width: 90%;
+       }
+    }
+    & .hero__image {
+      width: 50%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      & img {
+        position: relative;
+        transform: scale(400%);
+      }
+      
+    }
+     .hero__content__buttons {
+       @include mixin.flex-column(row, flex-start);
+       gap: 2rem;
+       & .button {
+         font-size: 4rem;
+        }
+        & .button.blue {
+          color: var.$primary-color;
+          @include mixin.buttons(var.$tertiary-color, 4rem 5rem);
+          border-radius: 1rem;
+        }
+        & .button.grey {
+          @include mixin.buttons(var.$primary-color, 4rem 5rem);
+          color: var.$secondary-color;
+          border-radius: 1rem;
+         
+          box-shadow: 2px 2px 5px 5px rgba(145, 148, 161, 0.1);
+        }
+     } 
+     
+    & .hero__image-overlay {
+      position: absolute;
+      width: 50%;
+      height: 40%;
+      border-radius: 0 0 0 25rem;
+      transform: translateY(-18%) translateX(20%);
+    }
+   
+  }
+}
