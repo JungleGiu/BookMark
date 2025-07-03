@@ -22,7 +22,7 @@
     height: auto;
   }
   & img {
-    transform: scale(0.6);
+    transform: scale(0.6) ;
     
   }
   .hero__content {
@@ -31,7 +31,7 @@
     color: var.$secondary-color;
     margin: 0 0 5rem 0;
 
-    & h2 {
+    & h1 {
     @include mixin.mobile-title;
       margin: 0 0 2rem 0;
       color: var.$secondary-color;
@@ -91,7 +91,7 @@
       align-items: flex-start;
       margin-left: 40rem;
       gap: 3rem;
-      & h2 {
+      & h1 {
         font-size: 15rem;
         text-align: left;
       }
@@ -110,7 +110,7 @@
       & img {
         z-index: 1;
         transform: scale(400%);
-        margin-left: 20rem
+      
       }
     }
     .hero__content__buttons {
@@ -135,9 +135,9 @@
 
     & .hero__image-overlay {
       position: absolute;
-      width: 40%;
-      height: 40%;
-      border-radius: 0 0 0 25rem;
+      width: 32%;
+      height: 38%;
+      border-radius: 0 0 0 35rem;
       transform: translateY(-18%) translateX(20%);
     }
   }
