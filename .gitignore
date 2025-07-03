@@ -1,3 +1,4 @@
 Diseño/
 .DS_Store
 node_modules/
+.tailwind.config.js/
