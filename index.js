@@ -37,3 +37,18 @@ const selectFeature3 =() => {
   feature2.classList.add("closed");
   feature3.classList.remove("closed");
 }
+
+const emailValidation = () => {
+  const input = document.getElementById('email')
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+  const img = document.getElementById('img-error')
+  const msg = document.getElementById('msg-error')
+  if (emailRegex.test(input.value)) {
+    img.classList.add('valid');
+    msg.classList.add('valid');
+   
+  } else {
+    img.classList.remove('error');
+    msg.classList.remove('error');
+  }
+}
