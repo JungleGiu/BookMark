@@ -82,13 +82,14 @@
   .hero {
     height: 80vh;
     align-self: center;
-    width: 80%;
+    width: 100%;
     @include mixin.flex(row-reverse, space-around);
     & .hero__content {
       width: 50%;
       height: 80%;
       @include mixin.flex(column, center);
       align-items: flex-start;
+      margin-left: 40rem;
       gap: 3rem;
       & h2 {
         font-size: 15rem;
@@ -107,7 +108,7 @@
       display: flex;
       justify-content: center;
       & img {
-       
+        z-index: 1;
         transform: scale(400%);
         margin-left: 20rem
       }
@@ -134,7 +135,7 @@
 
     & .hero__image-overlay {
       position: absolute;
-      width: 50%;
+      width: 40%;
       height: 40%;
       border-radius: 0 0 0 25rem;
       transform: translateY(-18%) translateX(20%);
