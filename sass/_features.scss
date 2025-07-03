@@ -176,7 +176,8 @@
         width: 100%;
         
         & img {
-          scale: 4;
+          position: relative;
+          scale: 3.5;
           transform: translateX(40%);
         }
         & .feature__item__content{

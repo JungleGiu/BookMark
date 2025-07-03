@@ -543,7 +543,8 @@
     width: 100%;
   }
   .features .features__container .features__item img {
-    scale: 4;
+    position: relative;
+    scale: 3.5;
     transform: translateX(40%);
   }
   .features .features__container .features__item .feature__item__content {
@@ -712,6 +713,9 @@ footer .footer__container .footer__socials {
     align-items: center;
     height: 60rem;
   }
+  footer .subscription .error {
+    display: none;
+  }
   footer .subscription p {
     font-size: 3.5rem;
   }
@@ -744,6 +748,10 @@ footer .footer__container .footer__socials {
     color: rgb(145, 148, 161);
     font-size: 3.5rem;
   }
+  footer .subscription form .input-box img {
+    width: 5rem;
+    height: 5rem;
+  }
   footer .subscription button {
     border-radius: 0.3rem;
     background-color: rgb(250, 87, 87);
@@ -752,8 +760,17 @@ footer .footer__container .footer__socials {
     width: 30%;
     font-size: 3rem;
   }
+  footer #msg-error {
+    display: block;
+    background-color: rgb(250, 87, 87);
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    width: 30%;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
   footer .footer__container {
-    height: 20rem;
+    height: 40rem;
     padding: 0 50rem;
     display: flex;
     flex-direction: row;
