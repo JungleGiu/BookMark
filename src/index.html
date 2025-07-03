@@ -7,7 +7,7 @@
     <meta name="description" content="A simple bookmark clone" />
     <meta name="keywords" content="bookmark, clone, simple, web app" />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./output.css" />
     <title>
       Bookmarks - a simple bookmark manager for browsers | Bookmarks - a simple
       bookmark manager for browsers
@@ -15,28 +15,28 @@
   </head>
   <body>
     <header>
-      <div class="navbar-container">
-        <div class="logo">
+      <div class="">
+        <div class="flex">
           <img src="./Assets/Images/logo-bookmark.svg" alt="Bookmarks Logo" />
         </div>
-        <nav class="burger">
+        <nav class="">
          <a id="burger__open-icon" onclick=openCloseMenu()> <img src="./Assets/Images/icon-hamburger.svg" alt="Menu" /> </a>
-         <div class="burger__menu">
-          <div class="burger__menu__header">
+         <div class="">
+          <div class="">
             <img id="burger__menu__header__logo" src="./Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
             <a id="burger__menu__header__close" onclick=openCloseMenu()><img src="./Assets/Images/icon-close.svg" alt="Close Menu"/></a>
           </div>
-         <div class="menu__list">
-            <div class="menu__list__line"></div>
+         <div class="">
+            <div class=""></div>
             <a  alt="Home">Features</a>
-            <div class="menu__list__line"></div>
+            <div class=""></div>
             <a  alt="Pricing">Pricing</a>
-            <div class="menu__list__line"></div>
+            <div class=""></div>
             <a  alt="Contact">Contact</a>
-            <div class="menu__list__line"></div>
+            <div class=""></div>
             <a id="login" alt="Login">Login</a>
          </div>
-         <div class="burger__menu__footer">
+         <div class="">
           <img src="./Assets/Images/icon-facebook.svg" alt="Facebook" />
           <img src="./Assets/Images/icon-twitter.svg" alt="Twitter" />
          </div>
@@ -44,19 +44,19 @@
           </div>
         </div>
     </header>
-    <main>
-    <section class="hero">
-      <div class="hero__image">
+    <main class="">
+    <section class="">
+      <div class="">
         <img src="./Assets/Images/illustration-hero.svg" alt="Hero Image" />
-        <div class="hero__image-overlay"></div>
+        <div class=""></div>
       </div>
-      <div class="hero__content">
+      <div class="">
         <h1>A simple bookmark manager</h1>
         <p>
           A clean and simple interface to organize your favorite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <div class="hero__content__buttons">
+        <div class="">
           <button href="bookmarks.html" class="button blue">
             Get it on Chrome
           </button>
@@ -66,74 +66,74 @@
         </div>
       </div>
     </section>
-    <section class="features">
+    <section class="">
   <h2>Features</h2>
   <p>Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-  <nav class="features__list">
-    <div class="features__list__line"></div>
+  <nav class="">
+    <div class=""></div>
     <a id="sel-1" class="selected" onclick="selectFeature1()" >Simple Bookmarking</a>
-      <div class="features__list__line"></div>
+      <div class=""></div>
       <a id="sel-2" onclick="selectFeature2()" >Speedy Searching</a>
-      <div class="features__list__line"></div>
+      <div class=""></div>
       <a id="sel-3" onclick="selectFeature3()" >Easy Sharing</a>
-      <div class="features__list__line" ></div>
+      <div class="" ></div>
     </nav>
-    <div class="features__container">
-      <div class="features__image-overlay"></div>
-    <div id="tab-1" class="features__item">
+    <div class="">
+      <div class=""></div>
+    <div id="tab-1" class="">
       <img src="./Assets/Images/illustration-features-tab-1.svg" alt="Brand Recognition">
-      <div class="feature__item__content">
+      <div class="">
       <h3>Bookmark in one click</h3>
       <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-      <button class="button blue features">More Info</button>
+      <button class="">More Info</button>
       </div>
     </div>
-    <div id="tab-2" class="features__item closed">
+    <div id="tab-2" class="">
       <img src="./Assets/Images/illustration-features-tab-2.svg" alt="Detailed Records">
-      <div class="features-content">
+      <div class="">
       <h3>Intelligent search</h3>
       <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-      <button class="button blue features">More Info</button>
+      <button class="">More Info</button>
       </div>
     </div>
-    <div id="tab-3" class="features__item closed">
+    <div id="tab-3" class="">
       <img src="./Assets/Images/illustration-features-tab-3.svg" alt="Fully Customizable">
-      <div class="feature__item__content">
+      <div class="">
       <h3>Share your bookmarks</h3>
       <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-      <button class="button blue features">More Info</button>
+      <button class="">More Info</button>
       </div>
     </div>
   </div>
     </section>
     </main>
     <footer>
-      <div class="subscription">
+      <div class="">
         <p>35,000+ Already Joined</p>
         <h2>
           Stay up-to-date with what we're doing
         </h2>
         <form> 
-          <div class="input-box">
+          <div class="">
             <input type="email" id="email" placeholder="Enter your email address" />
-            <img id="img-error" class="error" src="./Assets/Images/icon-error.svg" alt="Form Error">
+            <img id="img-error" class="" src="./Assets/Images/icon-error.svg" alt="Form Error">
           </div>
           <button onclick="emailValidation()" >contact us</button>
         </form>
-        <div id="msg-error"class="error">
+        <div id="msg-error"class="">
           Whoops, make sure it's an email
         </div>
       </div>
-      <div class="footer__container">
-        <div class="footer__logo">
+      <div class="">
+        <div class="">
           <img src="./Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
         </div>
-        <nav class="footer__nav">
-          <a href="#">Features</a>
-          <a href="#">Pricing</a>
-          <a href="#">Contact</a>
+        <nav class="">
+          <a href="">Features</a>
+          <a href="">Pricing</a>
+          <a href="">Contact</a>
         </nav>
-        <div class="footer__socials">
+        <div class="">
           <img src="./Assets/Images/icon-facebook.svg" alt="Facebook" />
           <img src="./Assets/Images/icon-twitter.svg" alt="Twitter" />
         </div>

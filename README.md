@@ -7,17 +7,16 @@ In this repository I'll be developing **https://bookmarkextension.vercel.app/** 
 
 Stages will be stored in different branches using a **GitFlow workflow** model, always prioritizing a **mobile-first** approach.
 
-## SASS 
+## Tailwind 
 
 
 ### Built with:
 1. Html5
-2. CSS3
-3. JavaScript ES6
-4. SASS
+2. JavaScript ES6
+3. Tailwind 
 
- I tried to use as much **semantic tags** as I could, **snake-case** for class BEM naming and `alt` attribute for accessibility
+ I tried to use as much **semantic tags** as I could, **tailwind** is very powerful with its class naming, I recurred to `alt` attribute for accessibility
 
 To display the project you can click on this link :
-http://htmlpreview.github.io/?https://github.com/JungleGiu/BookMark/blob/vanilla/index.html
-or clone this repository, no further inastallations are required.
+http://htmlpreview.github.io/?https://github.com/JungleGiu/BookMark/blob/tailwind/index.html
+or clone this repository, run on your terminal `npm i` and `npm run tailwind`
