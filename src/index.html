@@ -13,18 +13,22 @@
       bookmark manager for browsers
     </title>
   </head>
-  <body>
-    <header>
-      <div class="">
-        <div class="flex">
-          <img src="./Assets/Images/logo-bookmark.svg" alt="Bookmarks Logo" />
+  <body class="box-border text-blue-950  max-w-xl min-h-dvh">
+  <header>
+    <nav class="flex justify-between items-center p-10 mx-auto">
+        <div class="">
+          <img src="../Assets/Images/logo-bookmark.svg" alt="Bookmarks Logo"
+            />
         </div>
-        <nav class="">
-         <a id="burger__open-icon" onclick=openCloseMenu()> <img src="./Assets/Images/icon-hamburger.svg" alt="Menu" /> </a>
-         <div class="">
+         <a id="burger__open-icon" onclick=openCloseMenu()> 
+          <img src="../Assets/Images/icon-hamburger.svg" alt="Menu" />
+         </a>
+         <div class="hidden">
           <div class="">
-            <img id="burger__menu__header__logo" src="./Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
-            <a id="burger__menu__header__close" onclick=openCloseMenu()><img src="./Assets/Images/icon-close.svg" alt="Close Menu"/></a>
+            <img id="burger__menu__header__logo" src="../Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
+            <a id="burger__menu__header__close" onclick=openCloseMenu()>
+              <img src="../Assets/Images/icon-close.svg" alt="Close Menu"/>
+            </a>
           </div>
          <div class="">
             <div class=""></div>
@@ -37,39 +41,38 @@
             <a id="login" alt="Login">Login</a>
          </div>
          <div class="">
-          <img src="./Assets/Images/icon-facebook.svg" alt="Facebook" />
-          <img src="./Assets/Images/icon-twitter.svg" alt="Twitter" />
+          <img src="../Assets/Images/icon-facebook.svg" alt="Facebook" />
+          <img src="../Assets/Images/icon-twitter.svg" alt="Twitter" />
          </div>
-        </nav>
-          </div>
         </div>
-    </header>
-    <main class="">
-    <section class="">
-      <div class="">
-        <img src="./Assets/Images/illustration-hero.svg" alt="Hero Image" />
-        <div class=""></div>
-      </div>
-      <div class="">
-        <h1>A simple bookmark manager</h1>
-        <p>
+        </nav>
+        <main class="">
+          <section class="flex-column justify-around">
+          <div class="">
+        <img src="../Assets/Images/illustration-hero.svg" alt="Hero Image"
+        class="h-70 object-cover m-auto" />
+        <div class="bg-blue-500 -z-10 absolute w-80 right-0 top-42 min-h-56 rounded-l-full"></div>
+      <div class="flex-col justify-center text-center ">
+        <h1 class="text-4xl mt-14 mb-5 font-bold max-w-sm capitalize" >A simple bookmark manager</h1>
+        <p class="max-w-sm px-10 text-gray-500 mb-5">
           A clean and simple interface to organize your favorite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <div class="">
-          <button href="bookmarks.html" class="button blue">
+        <div class="flex gap-4 justify-center">
+          <button href="bookmarks.html" class="bg-blue-500 font-medium text-white px-6 py-3 rounded-md">
             Get it on Chrome
           </button>
-          <button href="bookmarks.html" class="button grey">
+          <button href="bookmarks.html" class="bg-gray-100 font-medium text-gray-500 px-6 py-3 rounded-md shadow-lg">
             Get it on Firefox
           </button>
         </div>
       </div>
     </section>
-    <section class="">
+    </header>
+    <section class="flex-column justify-center gap-3.5">
   <h2>Features</h2>
   <p>Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-  <nav class="">
+  <nav class="flex-column justify-center">
     <div class=""></div>
     <a id="sel-1" class="selected" onclick="selectFeature1()" >Simple Bookmarking</a>
       <div class=""></div>
@@ -81,7 +84,7 @@
     <div class="">
       <div class=""></div>
     <div id="tab-1" class="">
-      <img src="./Assets/Images/illustration-features-tab-1.svg" alt="Brand Recognition">
+      <img src="../Assets/Images/illustration-features-tab-1.svg" alt="Brand Recognition">
       <div class="">
       <h3>Bookmark in one click</h3>
       <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
@@ -89,7 +92,7 @@
       </div>
     </div>
     <div id="tab-2" class="">
-      <img src="./Assets/Images/illustration-features-tab-2.svg" alt="Detailed Records">
+      <img src="../Assets/Images/illustration-features-tab-2.svg" alt="Detailed Records">
       <div class="">
       <h3>Intelligent search</h3>
       <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
@@ -97,7 +100,7 @@
       </div>
     </div>
     <div id="tab-3" class="">
-      <img src="./Assets/Images/illustration-features-tab-3.svg" alt="Fully Customizable">
+      <img src="../Assets/Images/illustration-features-tab-3.svg" alt="Fully Customizable">
       <div class="">
       <h3>Share your bookmarks</h3>
       <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
@@ -109,10 +112,12 @@
     </main>
     <footer>
       <div class="">
+        <div>
         <p>35,000+ Already Joined</p>
         <h2>
           Stay up-to-date with what we're doing
-        </h2>
+        </h2> 
+      </div>
         <form> 
           <div class="">
             <input type="email" id="email" placeholder="Enter your email address" />
@@ -126,7 +131,7 @@
       </div>
       <div class="">
         <div class="">
-          <img src="./Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
+          <img src="../Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
         </div>
         <nav class="">
           <a href="">Features</a>
@@ -134,8 +139,8 @@
           <a href="">Contact</a>
         </nav>
         <div class="">
-          <img src="./Assets/Images/icon-facebook.svg" alt="Facebook" />
-          <img src="./Assets/Images/icon-twitter.svg" alt="Twitter" />
+          <img src="../Assets/Images/icon-facebook.svg" alt="Facebook" />
+          <img src="../Assets/Images/icon-twitter.svg" alt="Twitter" />
         </div>
       </div>   
     </footer>
