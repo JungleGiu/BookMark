@@ -19,5 +19,5 @@ Stages will be stored in different branches using a **GitFlow workflow** model, 
  I tried to use as much **semantic tags** as I could, **snake-case** for class BEM naming and `alt` attribute for accessibility
 
 To display the project you can click on this link :
-http://htmlpreview.github.io/?https://github.com/JungleGiu/BookMark/blob/vanilla/index.html
+http://htmlpreview.github.io/?https://github.com/JungleGiu/BookMark/blob/sass/index.html
 or clone this repository, no further inastallations are required.
