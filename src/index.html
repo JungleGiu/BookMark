@@ -3,147 +3,227 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Giu" />
-    <meta name="description" content="A simple bookmark clone" />
-    <meta name="keywords" content="bookmark, clone, simple, web app" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./output.css" />
-    <title>
-      Bookmarks - a simple bookmark manager for browsers | Bookmarks - a simple
-      bookmark manager for browsers
-    </title>
+    <link rel="stylesheet" href="output.css">
+    <title>Bookmark</title>
   </head>
-  <body class="box-border text-blue-950  max-w-xl min-h-dvh">
-  <header>
-    <nav class="flex justify-between items-center p-10 mx-auto">
-        <div class="">
-          <img src="../Assets/Images/logo-bookmark.svg" alt="Bookmarks Logo"
-            />
-        </div>
-         <a id="burger__open-icon" onclick=openCloseMenu()> 
-          <img src="../Assets/Images/icon-hamburger.svg" alt="Menu" />
-         </a>
-         <div class="hidden">
-          <div class="">
-            <img id="burger__menu__header__logo" src="../Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
-            <a id="burger__menu__header__close" onclick=openCloseMenu()>
-              <img src="../Assets/Images/icon-close.svg" alt="Close Menu"/>
-            </a>
+  <body class="font-sans text-blue-950 overflow-x-hidden">
+  <header class="flex items-center justify-between p-6 max-w-6xl mx-auto">
+  <img src="../Assets/Images/logo-bookmark.svg" alt="Bookmark Logo" class="h-6">
+
+
+  <img src="../Assets/Images/icon-hamburger.svg"
+       onclick="toggleMenu()"
+       alt="Hamburger Menu"
+       class="h-3 cursor-pointer md:hidden">
+
+
+  <nav id="mobileMenu"
+       class="hidden fixed inset-0 bg-blue-950 bg-opacity-95 text-white flex-col items-center justify-center z-50 md:hidden">
+    
+  
+    <div class="flex justify-between items-center w-full px-6 mb-8">
+      <img src="../Assets/Images/logo-bookmark-white.svg" alt="Bookmark logo" class="h-6">
+      <img src="../Assets/Images/icon-close.svg" onclick="toggleMenu()" alt="Close Menu" class="h-4 cursor-pointer">
+    </div>
+
+    <div class="flex flex-col items-center gap-6 text-lg uppercase tracking-widest">
+      <a href="#Features" class="hover:text-red-500">Features</a>
+      <a href="#" class="hover:text-red-500">Pricing</a>
+      <a href="#" class="hover:text-red-500">Contact</a>
+      <a href="#"
+         class="border border-white px-6 py-2 mt-4 rounded hover:bg-white hover:text-blue-900 transition">
+        Login
+      </a>
+    </div>
+
+   
+    <div class="flex gap-6 mt-10">
+      <img src="../Assets/Images/icon-facebook.svg" alt="Facebook" class="h-5">
+      <img src="../Assets/Images/icon-twitter.svg" alt="Twitter" class="h-5">
+    </div>
+  </nav>
+
+  <nav class="hidden md:flex items-center gap-8 text-gray-600">
+    <a href="#Features" class="hover:text-red-500">Features</a>
+    <a href="#" class="hover:text-red-500">Pricing</a>
+    <a href="#" class="hover:text-red-500">Contact</a>
+    <a href="#" class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition">Login</a>
+  </nav>
+</header>
+
+    <main class="text-center  max-w-6xl mx-auto">
+      <section class="flex flex-col-reverse md:flex-row items-center py-16">
+        <div class="md:w-1/2">
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">A Simple Bookmark Manager</h1>
+          <p class="text-gray-500 mb-6">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <div class="flex justify-center gap-4">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm">Get it on Chrome</button>
+            <button class="bg-gray-200 text-blue-950 px-4 py-2 rounded-md text-sm">Get it on Firefox</button>
           </div>
-         <div class="">
-            <div class=""></div>
-            <a  alt="Home">Features</a>
-            <div class=""></div>
-            <a  alt="Pricing">Pricing</a>
-            <div class=""></div>
-            <a  alt="Contact">Contact</a>
-            <div class=""></div>
-            <a id="login" alt="Login">Login</a>
-         </div>
-         <div class="">
-          <img src="../Assets/Images/icon-facebook.svg" alt="Facebook" />
-          <img src="../Assets/Images/icon-twitter.svg" alt="Twitter" />
-         </div>
         </div>
-        </nav>
-        <main class="">
-          <section class="flex-column justify-around">
-          <div class="">
-        <img src="../Assets/Images/illustration-hero.svg" alt="Hero Image"
-        class="h-70 object-cover m-auto" />
-        <div class="bg-blue-500 -z-10 absolute w-80 right-0 top-42 min-h-56 rounded-l-full"></div>
-      <div class="flex-col justify-center text-center ">
-        <h1 class="text-4xl mt-14 mb-5 font-bold max-w-sm capitalize" >A simple bookmark manager</h1>
-        <p class="max-w-sm px-10 text-gray-500 mb-5">
-          A clean and simple interface to organize your favorite websites. Open
-          a new browser tab and see your sites load instantly. Try it for free.
-        </p>
-        <div class="flex gap-4 justify-center">
-          <button href="bookmarks.html" class="bg-blue-500 font-medium text-white px-6 py-3 rounded-md">
-            Get it on Chrome
-          </button>
-          <button href="bookmarks.html" class="bg-gray-100 font-medium text-gray-500 px-6 py-3 rounded-md shadow-lg">
-            Get it on Firefox
-          </button>
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <img src="../Assets/Images/illustration-hero.svg" alt="Hero Image" class="w-full max-w-md mx-auto">
         </div>
-      </div>
-    </section>
-    </header>
-    <section class="flex-column justify-center gap-3.5">
-  <h2>Features</h2>
-  <p>Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-  <nav class="flex-column justify-center">
-    <div class=""></div>
-    <a id="sel-1" class="selected" onclick="selectFeature1()" >Simple Bookmarking</a>
-      <div class=""></div>
-      <a id="sel-2" onclick="selectFeature2()" >Speedy Searching</a>
-      <div class=""></div>
-      <a id="sel-3" onclick="selectFeature3()" >Easy Sharing</a>
-      <div class="" ></div>
-    </nav>
-    <div class="">
-      <div class=""></div>
-    <div id="tab-1" class="">
-      <img src="../Assets/Images/illustration-features-tab-1.svg" alt="Brand Recognition">
-      <div class="">
-      <h3>Bookmark in one click</h3>
-      <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-      <button class="">More Info</button>
-      </div>
-    </div>
-    <div id="tab-2" class="">
-      <img src="../Assets/Images/illustration-features-tab-2.svg" alt="Detailed Records">
-      <div class="">
-      <h3>Intelligent search</h3>
-      <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-      <button class="">More Info</button>
-      </div>
-    </div>
-    <div id="tab-3" class="">
-      <img src="../Assets/Images/illustration-features-tab-3.svg" alt="Fully Customizable">
-      <div class="">
-      <h3>Share your bookmarks</h3>
-      <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-      <button class="">More Info</button>
-      </div>
-    </div>
-  </div>
-    </section>
-    </main>
-    <footer>
-      <div class="">
-        <div>
-        <p>35,000+ Already Joined</p>
-        <h2>
-          Stay up-to-date with what we're doing
-        </h2> 
-      </div>
-        <form> 
-          <div class="">
-            <input type="email" id="email" placeholder="Enter your email address" />
-            <img id="img-error" class="" src="./Assets/Images/icon-error.svg" alt="Form Error">
+      </section>
+
+      <!-- Features -->
+      <section id="Features" class="py-20">
+        <h2 class="text-3xl font-semibold mb-4">Features</h2>
+        <p class="text-gray-500 max-w-xl mx-auto mb-10">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+
+        <div class="flex justify-center gap-8 text-sm border-b border-gray-300 mb-12">
+          <button id="sel-1" onClick="showTab('sel-1','tab-1')" class="pb-2 border-b-2 border-red-500">Simple Bookmarking</button>
+          <button id="sel-2" onClick="showTab( 'sel-2', 'tab-2')" class="pb-2  ">Speedy Searching</button>
+          <button id="sel-3" onClick="showTab('sel-3', 'tab-3')" class="pb-2  ">Easy Sharing</button>
+        </div>
+
+        <div class="relative">
+          <div id="tab-1" class="feature-tab flex flex-col md:flex-row items-center gap-12" >
+            <img src="../Assets/Images/illustration-features-tab-1.svg" alt="Bookmark" class="w-full max-w-md mx-auto">
+            <div class="text-center md:text-left">
+              <h3 class="text-xl font-semibold mb-2">Bookmark in one click</h3>
+              <p class="text-gray-500 mb-4 max-w-md">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm">More Info</button>
+            </div>
           </div>
-          <button onclick="emailValidation()" >contact us</button>
+
+          <div id="tab-2" class="feature-tab hidden flex flex-col md:flex-row items-center gap-12">
+            <img src="../Assets/Images/illustration-features-tab-2.svg" alt="Search" class="w-full max-w-md mx-auto">
+            <div class="text-center md:text-left">
+              <h3 class="text-xl font-semibold mb-2">Intelligent search</h3>
+              <p class="text-gray-500 mb-4 max-w-md">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm">More Info</button>
+            </div>
+          </div>
+
+          <div id="tab-3" class="feature-tab hidden flex flex-col md:flex-row items-center gap-12">
+            <img src="../Assets/Images/illustration-features-tab-3.svg" alt="Sharing" class="w-full max-w-md mx-auto">
+            <div class="text-center md:text-left">
+              <h3 class="text-xl font-semibold mb-2">Share your bookmarks</h3>
+              <p class="text-gray-500 mb-4 max-w-md">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer">More Info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Extensions -->
+      <section class="py-20">
+        <h2 class="text-2xl font-semibold mb-4">Download the extension</h2>
+        <p class="text-gray-500 max-w-xl mx-auto mb-12">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="shadow-lg p-6 rounded-lg text-center">
+            <img src="../Assets/Images/logo-chrome.svg" alt="Chrome" class="mx-auto mb-4">
+            <h3 class="font-semibold mb-2">Add to Chrome</h3>
+            <p class="text-gray-500 text-sm mb-4">Minimum version 62</p>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm">Add & Install Extension</button>
+          </div>
+          <div class="shadow-lg p-6  rounded-lg text-center">
+            <img src="../Assets/Images/logo-firefox.svg" alt="Firefox" class="mx-auto mb-4">
+            <h3 class="font-semibold mb-2">Add to Firefox</h3>
+            <p class="text-gray-500 text-sm mb-4">Minimum version 55</p>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm">Add & Install Extension</button>
+          </div>
+          <div class="shadow-lg p-6 rounded-lg text-center">
+            <img src="../Assets/Images/logo-opera.svg" alt="Opera" class="mx-auto mb-4">
+            <h3 class="font-semibold mb-2">Add to Opera</h3>
+            <p class="text-gray-500 text-sm mb-4">Minimum version 46</p>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm">Add & Install Extension</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="py-20">
+        <h2 class="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
+        <p class="text-gray-500 max-w-xl mx-auto mb-8">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+
+        <div class="max-w-2xl mx-auto divide-y divide-gray-300">
+          <details class="py-4">
+            <summary class="cursor-pointer font-medium">What is Bookmark? </summary>
+            Lorem Ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas.
+          </details>
+          <details class="py-4">
+            <summary class="cursor-pointer font-medium">How can I request a new browser?</summary>
+            Lorem Ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas.
+          </details>
+          <details class="py-4">
+            <summary class="cursor-pointer font-medium">Is there a mobile app?</summary>
+            Lorem Ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas.
+          </details>
+          <details class="py-4">
+            <summary class="cursor-pointer font-medium ::marker-href ">What about other Chromium browsers? </summary>
+            Lorem Ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas.
+          </details>
+        </div>
+        <button class="mt-8 bg-blue-600 text-white px-4 py-2 rounded-md text-sm">More Info</button>
+      </section>
+      <section class="bg-blue-600 text-white py-16  text-center">
+        <p class="uppercase text-xs tracking-wide mb-2">35,000+ Already Joined</p>
+        <h2 class="text-2xl font-semibold mb-4">Stay up-to-date with what we're doing</h2>
+        <form class="flex flex-col md:flex-row justify-center gap-4 max-w-md mx-auto">
+          <div class="bg-white flex items-center justify-center rounded-md">
+          <input id="email" type="email" placeholder="Enter your email address" class="px-8 py-2 rounded-md text-sm bg-transparent focus:outline-none placeholder:text-gray-500 placeholder:text-align-left text-gray-500">
+          <img href="../Assets/Images/icon-error.svg">        </div>
+          <button onclick="emailValidation()" class="bg-red-500 text-white px-4 py-2 rounded-md ">Contact Us</button>
         </form>
-        <div id="msg-error"class="">
-          Whoops, make sure it's an email
+          <div class=" text-white px-4 py-2 flex justify-center mt-4 hidden" id="invalid"> 
+            <p class="bg-red-500 mx-auto px-4 py-2">Whoops, make sure it's an email</p></div>
+      </section>
+
+      <footer class="bg-blue-950 text-white py-6 flex flex-col md:flex-row items-center justify-between px-6">
+        <div class="flex items-center gap-2 mb-4 md:mb-0">
+          <img src="../Assets/Images/logo-bookmark-white.svg" alt="Logo" class="h-6">
+          
         </div>
-      </div>
-      <div class="">
-        <div class="">
-          <img src="../Assets/Images/logo-bookmark-white.svg" alt="Bookmarks Logo" />
-        </div>
-        <nav class="">
-          <a href="">Features</a>
-          <a href="">Pricing</a>
-          <a href="">Contact</a>
+        <nav class="flex gap-6 text-sm uppercase">
+          <a href="#Features">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
         </nav>
-        <div class="">
-          <img src="../Assets/Images/icon-facebook.svg" alt="Facebook" />
-          <img src="../Assets/Images/icon-twitter.svg" alt="Twitter" />
+        <div class="flex gap-4 mt-4 md:mt-0">
+          <img src="../Assets/Images/icon-facebook.svg" alt="Facebook" class="h-5">
+          <img src="../Assets/Images/icon-twitter.svg" alt="Twitter" class="h-5">
         </div>
-      </div>   
-    </footer>
+      </footer>
+    </main>
   </body>
-  <script src="index.js"></script>
+      <script >
+         function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex');
+  }
+    const showTab = (sel, tabId) => {
+      const feature1 = document.querySelector("#tab-1");
+const feature2 = document.querySelector("#tab-2");
+const feature3 = document.querySelector("#tab-3");
+const select1= document.querySelector("#sel-1");
+const select2= document.querySelector("#sel-2");
+const select3= document.querySelector("#sel-3");
+  feature1.classList.add("hidden");
+  feature2.classList.add("hidden");
+  feature3.classList.add("hidden");
+  document.getElementById(tabId).classList.remove("hidden");
+  select1.classList.remove("border-red-500");
+  select2.classList.remove("border-red-500");
+  select3.classList.remove("border-red-500");
+  select1.classList.remove("border-b-2")
+  select2.classList.remove("border-b-2")
+  select3.classList.remove("border-b-2")
+  document.getElementById(sel).classList.add('border-red-500');
+  document.getElementById(sel).classList.add('border-b-2');
+}
+const emailValidation = () => {
+  const input = document.getElementById('email')
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+  
+  const msg = document.getElementById('invalid')
+  if (!emailRegex.test(input.value)) {
+msg.classList.remove('hidden')
+  } 
+}
+
+</script>
 </html>
